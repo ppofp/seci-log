@@ -1,0 +1,68 @@
+body {
+    font-family: "Microsoft Yahei"!important;
+
+    background-color: #313131;
+}
+.login-body {
+    padding-bottom: 20px;
+    margin-top: 150px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    background-color: #ddd;
+}
+
+.login-header {
+    padding: 10px 5px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    border-bottom: 1px solid #bbb;
+    border-radius: 2px 2px 0 0;
+    background: #ccc;
+}
+.login-header h4 {
+    font-size: 22px;
+}
+
+.login-body form {
+    padding: 20px 25px;
+}
+.login-body .btn,
+.login-body .btn:focus {
+    color: #fff;
+    border-color: #228b22;
+    background-color: #008f0a;
+}
+.login-body .btn:hover {
+    color: #ddd;
+    border-color: #006400;
+    background-color: #007850;
+}
+
+.login-body p {
+    padding-top: 10px;
+}
+
+.login-body input[type="text"],
+.login-body input[type="password"] {
+    height: 50px;
+    padding: 15px 10px;
+}
+.login-body form i {
+    height: 50px;
+
+    line-height: 50px;
+}
+
+.login-body .checkbox {
+    font-size: 15px;
+}
+.login-body .checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}

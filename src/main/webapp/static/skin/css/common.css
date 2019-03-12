@@ -1,0 +1,614 @@
+body {
+    min-width: 1200px;
+
+    font-family: "Microsoft YaHei";
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.nav.header {
+    right: 0;
+    left: 0;
+
+    color: #fff;
+    border-bottom: 1px solid #2a2a2a;
+    background-color: #313335;
+}
+.nav.header > .navbar {
+    height: 50px;
+    margin: 0 15px;
+}
+.nav.header > .navbar li {
+    float: left;
+
+    line-height: 50px;
+}
+.nav.m-user > li > a {
+    padding: 0 15px;
+
+    outline: none;
+    background-color: #313335;
+}
+
+.nav.m-user > li > a:hover,
+.nav.m-user > li > a.active {
+    background-color: #2a2a2a;
+}
+.nav.header .dropdown-menu {
+    top: 40px;
+    left: -13px;
+    z-index: 1000;
+
+    min-width: 100px;
+
+    border-color: #363636;
+    background-color: #3c3f41;
+}
+.nav.header .dropdown-menu > ul > li {
+    width: 100%;
+    height: 35px;
+
+    line-height: 35px;
+}
+.nav.header .dropdown-menu > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+}
+.nav.header .dropdown-menu > ul > li > a:hover,
+.nav.header .dropdown-menu > ul > li > a.active {
+    background-color: #4b4d4f;
+}
+.nav.header .open > a,
+.nav.header .open > a:hover,
+.nav.header .open > a:focus {
+    border-color: #eee;
+    background-color: #2a2a2a;
+}
+.nav.header .dropdown-toggle {
+    background-color: #313335;
+}
+
+
+.main {
+    position: relative;
+
+    min-width: 950px;
+
+    border-top: 1px solid #414141;
+}
+
+.main .left-side {
+    position: relative;
+    top: 0;
+    bottom: 0;
+
+    width: 200px;
+    min-height: 770px;
+
+    border-right: 1px solid #363636;
+    background-color: #3c3f41;
+}
+
+.main .left-side > ul > li {
+    width: 100%;
+
+    font-size: 13px;
+    line-height: 40px;
+
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #363636;
+}
+
+.main .left-side > ul > li:first-child {
+    border-top: 0 none;
+}
+
+.main .left-side > ul > li > a.side-head {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #fff;
+    border-left: 3px solid #3c3f41;
+    outline: none;
+}
+
+.main .left-side > ul > li > a.side-head:hover,
+.main .left-side > ul > li.active > a.side-head {
+    color: #0e6;
+    border-left-color: #0e6;
+}
+
+.main .left-side > ul > li > a.side-head .pull-right {
+    line-height: 40px;
+}
+.main .left-side > ul > li i {
+    margin-right: 10px;
+}
+
+.main .left-side > ul > li > ul {
+    display: none;
+    width: 100%;
+
+    border-top: 1px solid #363636;
+    background-color: #4b4d4f;
+}
+
+.main .left-side > ul > li > ul > li {
+    width: 100%;
+    height: 35px;
+    padding: 0 0 0 40px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 12px;
+    line-height: 35px;
+
+    border-left: 1px solid #3c3f41;
+}
+
+.main .left-side > ul > li > ul > li:hover,
+.main .left-side > ul > li > ul > li.active {
+    border-left: 1px solid #0e6;
+    background-color: #484b4d;
+}
+
+.main .left-side > ul > li > ul > li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: #ddd;
+    outline: none;
+}
+
+.main .left-side > ul > li > ul > li.active a,
+.main .left-side > ul > li > ul > li a:hover {
+    color: #0e6;
+}
+
+
+.main .center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 200px;
+
+    float: left;
+    min-height: 400px;
+
+    background-color: #ddd;
+}
+
+.main .center .center-path {
+    height: 35px;
+    padding: 0 30px;
+
+    font-size: 13px;
+    line-height: 35px;
+
+    border-bottom: 1px solid #363636;
+    background-color: #3c3f41;
+}
+
+.main .center .center-path li {
+    float: left;
+    padding-right: 10px;
+
+    color: #ccc;
+}
+
+.main .center .center-path li a {
+    text-decoration: none;
+
+    color: #0e6;
+}
+
+.main .center .center-path li a:hover {
+    color: #32cd32;
+}
+
+.main .center .center-body {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.layout {
+    position: relative;
+
+    float: left;
+    min-width: 100%;
+
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.layout .header {
+    float: left;
+    width: 100%;
+    height: 40px;
+
+    line-height: 40px;
+
+    color: #ccc;
+    border-bottom: 1px solid #333;
+    background-color: #3c3f41;
+}
+
+.layout .header span {
+    margin-left: 20px;
+
+    font-size: 13px;
+}
+
+.layout .header .ctr-box {
+    position: relative;
+
+    float: right;
+    height: 35px;
+    margin-right: 15px;
+    overflow: hidden;
+
+    line-height: 30px;
+}
+
+.layout .header .ctr-box a {
+    margin-left: 10px;
+}
+
+.layout .header .ctr-box i {
+    line-height: 30px;
+}
+
+.layout .body {
+    float: left;
+    width: 100%;
+
+    color: #222;
+    -webkit-border-bottom-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+            border-bottom-left-radius: 4px;
+    background-color: #ddd;
+}
+.layout .body .layout-inner {
+    margin: 15px;
+}
+
+.layout .body .layout-inner form .control-group {
+    height: 95px;
+}
+.layout .body .layout-inner form .control-group > .control-label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: normal;
+}
+.layout .body .layout-inner form .control-group > .controls > input {
+    margin-bottom: 5px;
+}
+.data-ctrl {
+    position: relative;
+
+    height: 40px;
+    margin-bottom: 15px;
+}
+.data-ctrl .btn-group {
+    float: left;
+    padding: 0;
+}
+.data-ctrl .btn-group .btn {
+    color: #ddd;
+    border-color: #333;
+    background-color: #4b4d4f;
+}
+.data-ctrl .btn-group .btn:hover {
+    color: #0e6;
+}
+.data-ctrl form {
+    display: inline-block;
+    float: left;
+}
+.data-ctrl form span {
+    cursor: pointer;
+
+    color: #fff;
+    background-color: #4b4d4f;
+}
+.data-ctrl button > span {
+    color: #222;
+    background-color: #efefef;
+}
+
+.data-ctrl form .btn.btn-primary {
+    color: #ddd;
+    border-color: #333;
+    background-color: #4b4d4f;
+}
+.data-ctrl form .btn.btn-primary:hover {
+    color: #0e6;
+}
+.data-body {
+    margin-bottom: 15px;
+}
+
+.data-body > table,
+.data-body > table > thead,
+.data-body > table > thead > tr,
+.data-body > table > thead > tr > td,
+.data-body > table > tbody,
+.data-body > table > tbody > tr,
+.data-body > table > tbody > tr > td {
+    border-color: #bbb;
+}
+.data-body > table > thead > tr > th > a > i {
+    margin-left: 15px;
+}
+.data-body > table > thead > tr > th > a,
+.data-body > table > thead > tr > th > a:hover {
+    text-decoration: none;
+
+    color: #222;
+}
+.data-body > table > thead > tr > th > label {
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+}
+
+.data-page {
+    height: 50px;
+
+    color: #222;
+}
+.data-page .pagination {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+.data-page > nav > .pagination > li > a {
+    margin-left: 6px;
+
+    color: #222;
+    border-color: #4b4d4f;
+    background-color: #ddd;
+}
+
+.data-page > nav > .pagination > li > a.count-label {
+    color: #222;
+    border: none;
+}
+
+.data-page > nav > .pagination > li > a:hover,
+.data-page > nav > .pagination > li > span:hover,
+.data-page > nav > .pagination > li > a:focus,
+.data-page > nav > .pagination > li > span:focus {
+    color: #0f0;
+    border-color: #3c3f41;
+    background-color: #3c3f41;
+}
+.data-page > nav > .pagination > .active > a,
+.data-page > nav > .pagination > .active > span,
+.data-page > nav > .pagination > .active > a:hover,
+.data-page > nav > .pagination > .active > span:hover,
+.data-page > nav > .pagination > .active > a:focus,
+.data-page > nav > .pagination > .active > span:focus {
+    color: #0f0;
+    border-color: #3c3f41;
+    background-color: #3c3f41;
+}
+.index-channle {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    color: #666;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+.index-channle:hover {
+    color: #666;
+    background-color: #eee;
+}
+
+.index-channle p {
+    margin-top: 0px;
+    
+}
+.index-channle table{
+    background-color: transparent;
+}
+.index-channle table tr{
+    border-bottom: 1px solid #bbb;
+    height: 35px;
+}
+.index-channle table>thead>tr:first-child{
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+}
+.index-channle table>tbody>tr>td{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.index-channle div.title{
+    border-bottom:1px solid #ccc;
+    padding-bottom: 5px;
+}
+.search-term{
+    margin-top: 10px;
+}
+.search-term label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+}
+.search-term input[type='text'],.search-term select{
+    font-size: 14px;
+    width: 185px;
+    height: 30px;
+    padding-left: 5px;
+    color: #555555;
+    background-color: #eee;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.search-term input[type='text']:focus,.search-term select:focus{
+    border-color: #bbb;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82, 217, 239, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(187, 187, 187, 0.6);
+}
+.search-term div.term{
+     float: left;
+     margin-right: 25px;
+}
+.search-term a.btn{
+    padding: 3px 15px;
+}
+.search-term a.btn:focus{
+    padding: 3px 15px;
+    color: #fff;
+}
+.search-term a.btn{
+    float: left;
+    margin-right: 15px;
+}
+.table a {
+    color: #222;
+}
+.table a:hover {
+    text-decoration: underline;
+
+    color: #007850;
+}
+form  .control-group > .controls > .dropdown > .btn-default {
+    text-align: left;
+
+    color: #333;
+    border-color: #ccc;
+    background-color: #efefef;
+}
+form  .control-group > .controls > .dropdown > .btn-default i {
+    margin-top: 7px;
+}
+
+form  .control-group > .controls > .dropdown > .dropdown-menu {
+    width: 100%;
+    max-height: 250px;
+    padding-left: 15px;
+    overflow: auto;
+
+    background-color: #efefef;;
+}
+form  .control-group > .controls > .dropdown > .dropdown-menu a {
+    text-decoration: none;
+}
+form  .control-group > .controls > .dropdown > .dropdown-menu span {
+    color: #222;
+    background-color: #efefef;
+}
+.m-subaccount-select-box {
+    float: left;
+    width: 70%;
+    height: 400px;
+    margin-top: 10px;
+    overflow: auto;
+}
+.m-subaccount-select-box .checkbox {
+    float: left;
+    width: 33.3333%;
+    margin-top: 10px;
+}
+
+.m-subaccount-selected,
+.m-subaccount-hasaccount {
+    float: left;
+    width: 25%;
+    height: 195px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    border: 1px solid #ccc;
+}
+.m-subaccount-selected .header,
+.m-subaccount-hasaccount .header {
+    padding: 0 10px;
+
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    background-color: #dedede;
+}
+.m-subaccount-selected > .body,
+.m-subaccount-hasaccount > .body {
+    height: 140px;
+    padding: 10px;
+    overflow: auto;
+
+    background-color: #efefef;
+}
+.m-subaccount-selected > .body span,
+.m-subaccount-hasaccount > .body span {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+
+    background-color: #ddd;
+}
+.m-subaccount-selected > .body span a,
+.m-subaccount-hasaccount .body span > a {
+    float: right;
+
+    font-style: normal;
+
+    cursor: pointer;
+
+    color: #000;
+}
+.f-hover {
+    cursor: pointer;
+}
+
+#modal-about .btn-close{
+    color: #ddd;
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#modal-about .btn-close:hover{
+    color: #0e6;
